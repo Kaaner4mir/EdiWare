@@ -5494,6 +5494,11 @@
         iKc2+eC8ifbmJq9s8qImxzV5QpNj5k21e81HRn0YQdKW9XcirZ8EFbJJBAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="rtbxEntryBriefing.Text" xml:space="preserve">
+    <value>USERNAME: If you are a student in this area, enter your student number; if you are an educator or authorized user, enter your user number.
+
+PASSWORD: Please enter your 9-digit password registered in the system.</value>
+  </data>
   <data name="pbxEduware.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAElAAABJQCAYAAACIygJAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAu

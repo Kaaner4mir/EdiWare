@@ -34,7 +34,8 @@
             this.btnIconStatus = new System.Windows.Forms.Button();
             this.btnCrossMark = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panelInformation = new System.Windows.Forms.Panel();
+            this.pnlInformation = new System.Windows.Forms.Panel();
+            this.rtbxEntryBriefing = new System.Windows.Forms.RichTextBox();
             this.pbxEduware = new System.Windows.Forms.PictureBox();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.tbxUsername = new System.Windows.Forms.TextBox();
@@ -51,9 +52,10 @@
             this.pbxVisible = new System.Windows.Forms.PictureBox();
             this.pbxLogin = new System.Windows.Forms.PictureBox();
             this.llblForgot = new System.Windows.Forms.LinkLabel();
+            this.rtbxInformation = new System.Windows.Forms.RichTextBox();
             this.pnlWindow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panelInformation.SuspendLayout();
+            this.pnlInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEduware)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -89,7 +91,8 @@
             this.btnWindowControl.Location = new System.Drawing.Point(1126, 0);
             this.btnWindowControl.Name = "btnWindowControl";
             this.btnWindowControl.Size = new System.Drawing.Size(40, 40);
-            this.btnWindowControl.TabIndex = 6;
+            this.btnWindowControl.TabIndex = 9;
+            this.btnWindowControl.TabStop = false;
             this.btnWindowControl.UseVisualStyleBackColor = false;
             this.btnWindowControl.Click += new System.EventHandler(this.btnWindowControl_Click);
             // 
@@ -105,7 +108,8 @@
             this.btnIconStatus.Location = new System.Drawing.Point(1086, 0);
             this.btnIconStatus.Name = "btnIconStatus";
             this.btnIconStatus.Size = new System.Drawing.Size(40, 40);
-            this.btnIconStatus.TabIndex = 5;
+            this.btnIconStatus.TabIndex = 8;
+            this.btnIconStatus.TabStop = false;
             this.btnIconStatus.UseVisualStyleBackColor = true;
             this.btnIconStatus.Click += new System.EventHandler(this.btnIconStatus_Click);
             // 
@@ -121,7 +125,8 @@
             this.btnCrossMark.Location = new System.Drawing.Point(1166, 0);
             this.btnCrossMark.Name = "btnCrossMark";
             this.btnCrossMark.Size = new System.Drawing.Size(40, 40);
-            this.btnCrossMark.TabIndex = 4;
+            this.btnCrossMark.TabIndex = 10;
+            this.btnCrossMark.TabStop = false;
             this.btnCrossMark.UseVisualStyleBackColor = true;
             this.btnCrossMark.Click += new System.EventHandler(this.btnCrossMark_Click);
             // 
@@ -137,15 +142,33 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // panelInformation
+            // pnlInformation
             // 
-            this.panelInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(63)))), ((int)(((byte)(79)))));
-            this.panelInformation.Controls.Add(this.pbxEduware);
-            this.panelInformation.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelInformation.Location = new System.Drawing.Point(0, 40);
-            this.panelInformation.Name = "panelInformation";
-            this.panelInformation.Size = new System.Drawing.Size(272, 753);
-            this.panelInformation.TabIndex = 1;
+            this.pnlInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(63)))), ((int)(((byte)(79)))));
+            this.pnlInformation.Controls.Add(this.rtbxInformation);
+            this.pnlInformation.Controls.Add(this.rtbxEntryBriefing);
+            this.pnlInformation.Controls.Add(this.pbxEduware);
+            this.pnlInformation.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlInformation.Location = new System.Drawing.Point(0, 40);
+            this.pnlInformation.Name = "pnlInformation";
+            this.pnlInformation.Size = new System.Drawing.Size(272, 753);
+            this.pnlInformation.TabIndex = 1;
+            // 
+            // rtbxEntryBriefing
+            // 
+            this.rtbxEntryBriefing.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.rtbxEntryBriefing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(63)))), ((int)(((byte)(79)))));
+            this.rtbxEntryBriefing.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbxEntryBriefing.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rtbxEntryBriefing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rtbxEntryBriefing.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rtbxEntryBriefing.Location = new System.Drawing.Point(26, 430);
+            this.rtbxEntryBriefing.Name = "rtbxEntryBriefing";
+            this.rtbxEntryBriefing.ReadOnly = true;
+            this.rtbxEntryBriefing.Size = new System.Drawing.Size(222, 281);
+            this.rtbxEntryBriefing.TabIndex = 1;
+            this.rtbxEntryBriefing.TabStop = false;
+            this.rtbxEntryBriefing.Text = resources.GetString("rtbxEntryBriefing.Text");
             // 
             // pbxEduware
             // 
@@ -166,7 +189,7 @@
             this.pnlUsername.Location = new System.Drawing.Point(514, 437);
             this.pnlUsername.Name = "pnlUsername";
             this.pnlUsername.Size = new System.Drawing.Size(400, 4);
-            this.pnlUsername.TabIndex = 2;
+            this.pnlUsername.TabIndex = 11;
             // 
             // tbxUsername
             // 
@@ -178,7 +201,8 @@
             this.tbxUsername.MaxLength = 16;
             this.tbxUsername.Name = "tbxUsername";
             this.tbxUsername.Size = new System.Drawing.Size(343, 29);
-            this.tbxUsername.TabIndex = 4;
+            this.tbxUsername.TabIndex = 0;
+            this.tbxUsername.TabStop = false;
             this.tbxUsername.Text = "Username";
             this.tbxUsername.Enter += new System.EventHandler(this.tbxUsername_Enter);
             this.tbxUsername.Leave += new System.EventHandler(this.tbxUsername_Leave);
@@ -205,7 +229,8 @@
             this.tbxPassword.MaxLength = 16;
             this.tbxPassword.Name = "tbxPassword";
             this.tbxPassword.Size = new System.Drawing.Size(301, 29);
-            this.tbxPassword.TabIndex = 5;
+            this.tbxPassword.TabIndex = 1;
+            this.tbxPassword.TabStop = false;
             this.tbxPassword.Text = "Password";
             this.tbxPassword.Enter += new System.EventHandler(this.tbxPassword_Enter);
             this.tbxPassword.Leave += new System.EventHandler(this.tbxPassword_Leave);
@@ -234,7 +259,7 @@
             this.btnLogin.Location = new System.Drawing.Point(41, 523);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(400, 57);
-            this.btnLogin.TabIndex = 6;
+            this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Log in";
             this.btnLogin.UseVisualStyleBackColor = false;
             // 
@@ -245,7 +270,7 @@
             this.panel1.Location = new System.Drawing.Point(514, 548);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 4);
-            this.panel1.TabIndex = 3;
+            this.panel1.TabIndex = 12;
             // 
             // rbtnStudent
             // 
@@ -257,8 +282,7 @@
             this.rbtnStudent.Location = new System.Drawing.Point(514, 316);
             this.rbtnStudent.Name = "rbtnStudent";
             this.rbtnStudent.Size = new System.Drawing.Size(100, 29);
-            this.rbtnStudent.TabIndex = 1;
-            this.rbtnStudent.TabStop = true;
+            this.rbtnStudent.TabIndex = 0;
             this.rbtnStudent.Text = "Student";
             this.rbtnStudent.UseVisualStyleBackColor = false;
             // 
@@ -272,8 +296,7 @@
             this.rbtnEducator.Location = new System.Drawing.Point(647, 316);
             this.rbtnEducator.Name = "rbtnEducator";
             this.rbtnEducator.Size = new System.Drawing.Size(112, 29);
-            this.rbtnEducator.TabIndex = 2;
-            this.rbtnEducator.TabStop = true;
+            this.rbtnEducator.TabIndex = 1;
             this.rbtnEducator.Text = "Educator";
             this.rbtnEducator.UseVisualStyleBackColor = false;
             // 
@@ -287,8 +310,7 @@
             this.rbtnAuthorized.Location = new System.Drawing.Point(782, 316);
             this.rbtnAuthorized.Name = "rbtnAuthorized";
             this.rbtnAuthorized.Size = new System.Drawing.Size(132, 29);
-            this.rbtnAuthorized.TabIndex = 3;
-            this.rbtnAuthorized.TabStop = true;
+            this.rbtnAuthorized.TabIndex = 2;
             this.rbtnAuthorized.Text = "Authorized";
             this.rbtnAuthorized.UseVisualStyleBackColor = false;
             // 
@@ -316,7 +338,7 @@
             this.llblAboutUs.Location = new System.Drawing.Point(191, 650);
             this.llblAboutUs.Name = "llblAboutUs";
             this.llblAboutUs.Size = new System.Drawing.Size(95, 25);
-            this.llblAboutUs.TabIndex = 11;
+            this.llblAboutUs.TabIndex = 2;
             this.llblAboutUs.TabStop = true;
             this.llblAboutUs.Text = "About Us";
             this.llblAboutUs.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblAboutUs_LinkClicked);
@@ -335,7 +357,7 @@
             // pbxLogin
             // 
             this.pbxLogin.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogin.Image")));
-            this.pbxLogin.Location = new System.Drawing.Point(132, 21);
+            this.pbxLogin.Location = new System.Drawing.Point(141, 21);
             this.pbxLogin.Name = "pbxLogin";
             this.pbxLogin.Size = new System.Drawing.Size(200, 200);
             this.pbxLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -352,9 +374,22 @@
             this.llblForgot.Location = new System.Drawing.Point(77, 602);
             this.llblForgot.Name = "llblForgot";
             this.llblForgot.Size = new System.Drawing.Size(328, 28);
-            this.llblForgot.TabIndex = 7;
+            this.llblForgot.TabIndex = 1;
             this.llblForgot.TabStop = true;
             this.llblForgot.Text = "Forgot Username / Password ?";
+            // 
+            // rtbxInformation
+            // 
+            this.rtbxInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(63)))), ((int)(((byte)(79)))));
+            this.rtbxInformation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbxInformation.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rtbxInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rtbxInformation.Location = new System.Drawing.Point(39, 232);
+            this.rtbxInformation.Name = "rtbxInformation";
+            this.rtbxInformation.Size = new System.Drawing.Size(209, 154);
+            this.rtbxInformation.TabIndex = 2;
+            this.rtbxInformation.TabStop = false;
+            this.rtbxInformation.Text = "WELCOME TO\n\n\tUSER PANEL\n\t\t\n\t       OF THE\n\n\t\tEDUWARE";
             // 
             // UserControl
             // 
@@ -371,17 +406,17 @@
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlUsername);
-            this.Controls.Add(this.panelInformation);
+            this.Controls.Add(this.pnlInformation);
             this.Controls.Add(this.pnlWindow);
             this.Controls.Add(this.pnlLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserControl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "EduWare";
             this.pnlWindow.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panelInformation.ResumeLayout(false);
+            this.pnlInformation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxEduware)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -398,7 +433,7 @@
 
         private System.Windows.Forms.Panel pnlWindow;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panelInformation;
+        private System.Windows.Forms.Panel pnlInformation;
         private System.Windows.Forms.Button btnCrossMark;
         private System.Windows.Forms.Button btnIconStatus;
         private System.Windows.Forms.Button btnWindowControl;
@@ -418,6 +453,8 @@
         private System.Windows.Forms.PictureBox pbxLogin;
         private System.Windows.Forms.PictureBox pbxVisible;
         private System.Windows.Forms.LinkLabel llblAboutUs;
+        private System.Windows.Forms.RichTextBox rtbxEntryBriefing;
+        private System.Windows.Forms.RichTextBox rtbxInformation;
     }
 }
 
