@@ -52,7 +52,8 @@
             this.pbxVisible = new System.Windows.Forms.PictureBox();
             this.pbxLogin = new System.Windows.Forms.PictureBox();
             this.llblForgot = new System.Windows.Forms.LinkLabel();
-            this.rtbxInformation = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlWindow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlInformation.SuspendLayout();
@@ -145,7 +146,8 @@
             // pnlInformation
             // 
             this.pnlInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(63)))), ((int)(((byte)(79)))));
-            this.pnlInformation.Controls.Add(this.rtbxInformation);
+            this.pnlInformation.Controls.Add(this.label2);
+            this.pnlInformation.Controls.Add(this.label1);
             this.pnlInformation.Controls.Add(this.rtbxEntryBriefing);
             this.pnlInformation.Controls.Add(this.pbxEduware);
             this.pnlInformation.Dock = System.Windows.Forms.DockStyle.Left;
@@ -153,6 +155,7 @@
             this.pnlInformation.Name = "pnlInformation";
             this.pnlInformation.Size = new System.Drawing.Size(272, 753);
             this.pnlInformation.TabIndex = 1;
+           // this.pnlInformation.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlInformation_Paint);
             // 
             // rtbxEntryBriefing
             // 
@@ -162,10 +165,10 @@
             this.rtbxEntryBriefing.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rtbxEntryBriefing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rtbxEntryBriefing.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.rtbxEntryBriefing.Location = new System.Drawing.Point(26, 430);
+            this.rtbxEntryBriefing.Location = new System.Drawing.Point(28, 468);
             this.rtbxEntryBriefing.Name = "rtbxEntryBriefing";
             this.rtbxEntryBriefing.ReadOnly = true;
-            this.rtbxEntryBriefing.Size = new System.Drawing.Size(222, 281);
+            this.rtbxEntryBriefing.Size = new System.Drawing.Size(222, 233);
             this.rtbxEntryBriefing.TabIndex = 1;
             this.rtbxEntryBriefing.TabStop = false;
             this.rtbxEntryBriefing.Text = resources.GetString("rtbxEntryBriefing.Text");
@@ -378,18 +381,27 @@
             this.llblForgot.TabStop = true;
             this.llblForgot.Text = "Forgot Username / Password ?";
             // 
-            // rtbxInformation
+            // label1
             // 
-            this.rtbxInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(63)))), ((int)(((byte)(79)))));
-            this.rtbxInformation.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbxInformation.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rtbxInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rtbxInformation.Location = new System.Drawing.Point(39, 232);
-            this.rtbxInformation.Name = "rtbxInformation";
-            this.rtbxInformation.Size = new System.Drawing.Size(209, 154);
-            this.rtbxInformation.TabIndex = 2;
-            this.rtbxInformation.TabStop = false;
-            this.rtbxInformation.Text = "WELCOME TO\n\n\tUSER PANEL\n\t\t\n\t       OF THE\n\n\t\tEDUWARE";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(76, 237);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 28);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "EDUWARE";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label2.Location = new System.Drawing.Point(63, 303);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(160, 28);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "LOG IN PANEL";
             // 
             // UserControl
             // 
@@ -417,6 +429,7 @@
             this.pnlWindow.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlInformation.ResumeLayout(false);
+            this.pnlInformation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEduware)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -454,7 +467,8 @@
         private System.Windows.Forms.PictureBox pbxVisible;
         private System.Windows.Forms.LinkLabel llblAboutUs;
         private System.Windows.Forms.RichTextBox rtbxEntryBriefing;
-        private System.Windows.Forms.RichTextBox rtbxInformation;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
